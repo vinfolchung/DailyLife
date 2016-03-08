@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410EFF601C8EF1290086351E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410EFF581C8EF1290086351E /* LoginController.m */; };
+		410EFF611C8EF1290086351E /* UIView+PlaceSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 410EFF5F1C8EF1290086351E /* UIView+PlaceSize.m */; };
+		410EFF651C8EF2490086351E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 410EFF641C8EF2490086351E /* login.png */; };
+		410EFF711C8EFBD60086351E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410EFF701C8EFBD60086351E /* MainViewController.m */; };
 		419F79891C8EEC640035ABBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F79881C8EEC640035ABBD /* main.m */; };
 		419F798C1C8EEC640035ABBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F798B1C8EEC640035ABBD /* AppDelegate.m */; };
-		419F798F1C8EEC640035ABBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F798E1C8EEC640035ABBD /* ViewController.m */; };
-		419F79921C8EEC640035ABBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419F79901C8EEC640035ABBD /* Main.storyboard */; };
 		419F79941C8EEC640035ABBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419F79931C8EEC640035ABBD /* Assets.xcassets */; };
 		419F79971C8EEC640035ABBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419F79951C8EEC640035ABBD /* LaunchScreen.storyboard */; };
 		419F79A21C8EEC640035ABBD /* Daily_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F79A11C8EEC640035ABBD /* Daily_LifeTests.m */; };
 		419F79AD1C8EEC640035ABBD /* Daily_LifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 419F79AC1C8EEC640035ABBD /* Daily_LifeUITests.m */; };
+		41F1B0DE1C8F060E00462D32 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1B0DD1C8F060E00462D32 /* BaseViewController.m */; };
+		41F1B0E21C8F06C400462D32 /* bigShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F1B0E11C8F06C400462D32 /* bigShadow.png */; };
+		41F1B0E41C8F107600462D32 /* login2.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F1B0E31C8F107600462D32 /* login2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		410EFF541C8EF1290086351E /* DailyLife-prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DailyLife-prefix.h"; sourceTree = "<group>"; };
+		410EFF571C8EF1290086351E /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		410EFF581C8EF1290086351E /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		410EFF5E1C8EF1290086351E /* UIView+PlaceSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PlaceSize.h"; sourceTree = "<group>"; };
+		410EFF5F1C8EF1290086351E /* UIView+PlaceSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PlaceSize.m"; sourceTree = "<group>"; };
+		410EFF641C8EF2490086351E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		410EFF6F1C8EFBD60086351E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		410EFF701C8EFBD60086351E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		419F79841C8EEC640035ABBD /* Daily-Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily-Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419F79881C8EEC640035ABBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		419F798A1C8EEC640035ABBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		419F798B1C8EEC640035ABBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		419F798D1C8EEC640035ABBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		419F798E1C8EEC640035ABBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		419F79911C8EEC640035ABBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		419F79931C8EEC640035ABBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419F79961C8EEC640035ABBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419F79981C8EEC640035ABBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +61,10 @@
 		419F79A81C8EEC640035ABBD /* Daily-LifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily-LifeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419F79AC1C8EEC640035ABBD /* Daily_LifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Daily_LifeUITests.m; sourceTree = "<group>"; };
 		419F79AE1C8EEC640035ABBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F1B0DC1C8F060E00462D32 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		41F1B0DD1C8F060E00462D32 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		41F1B0E11C8F06C400462D32 /* bigShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigShadow.png; sourceTree = "<group>"; };
+		41F1B0E31C8F107600462D32 /* login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410EFF531C8EF1290086351E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		410EFF551C8EF1290086351E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41F1B0DB1C8F05E900462D32 /* Base */,
+				410EFF6D1C8EFBBC0086351E /* Main */,
+				410EFF561C8EF1290086351E /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		410EFF561C8EF1290086351E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF571C8EF1290086351E /* LoginController.h */,
+				410EFF581C8EF1290086351E /* LoginController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		410EFF591C8EF1290086351E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF621C8EF2490086351E /* Picture */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		410EFF5A1C8EF1290086351E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		410EFF5B1C8EF1290086351E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF721C8EFD6A0086351E /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		410EFF5C1C8EF1290086351E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF5D1C8EF1290086351E /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		410EFF5D1C8EF1290086351E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF5E1C8EF1290086351E /* UIView+PlaceSize.h */,
+				410EFF5F1C8EF1290086351E /* UIView+PlaceSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		410EFF621C8EF2490086351E /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF631C8EF2490086351E /* Login */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		410EFF631C8EF2490086351E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41F1B0E31C8F107600462D32 /* login2.png */,
+				41F1B0E11C8F06C400462D32 /* bigShadow.png */,
+				410EFF641C8EF2490086351E /* login.png */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		410EFF6D1C8EFBBC0086351E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				410EFF6F1C8EFBD60086351E /* MainViewController.h */,
+				410EFF701C8EFBD60086351E /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		410EFF721C8EFD6A0086351E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		419F797B1C8EEC640035ABBD = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +215,15 @@
 		419F79861C8EEC640035ABBD /* Daily-Life */ = {
 			isa = PBXGroup;
 			children = (
+				410EFF531C8EF1290086351E /* Models */,
+				410EFF551C8EF1290086351E /* Controllers */,
+				410EFF591C8EF1290086351E /* Resource */,
+				410EFF5A1C8EF1290086351E /* Libs */,
+				410EFF5B1C8EF1290086351E /* Views */,
+				410EFF5C1C8EF1290086351E /* Util */,
 				419F798A1C8EEC640035ABBD /* AppDelegate.h */,
 				419F798B1C8EEC640035ABBD /* AppDelegate.m */,
-				419F798D1C8EEC640035ABBD /* ViewController.h */,
-				419F798E1C8EEC640035ABBD /* ViewController.m */,
-				419F79901C8EEC640035ABBD /* Main.storyboard */,
+				410EFF541C8EF1290086351E /* DailyLife-prefix.h */,
 				419F79931C8EEC640035ABBD /* Assets.xcassets */,
 				419F79951C8EEC640035ABBD /* LaunchScreen.storyboard */,
 				419F79981C8EEC640035ABBD /* Info.plist */,
@@ -138,6 +256,15 @@
 				419F79AE1C8EEC640035ABBD /* Info.plist */,
 			);
 			path = "Daily-LifeUITests";
+			sourceTree = "<group>";
+		};
+		41F1B0DB1C8F05E900462D32 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41F1B0DC1C8F060E00462D32 /* BaseViewController.h */,
+				41F1B0DD1C8F060E00462D32 /* BaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +373,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F1B0E21C8F06C400462D32 /* bigShadow.png in Resources */,
 				419F79971C8EEC640035ABBD /* LaunchScreen.storyboard in Resources */,
+				41F1B0E41C8F107600462D32 /* login2.png in Resources */,
 				419F79941C8EEC640035ABBD /* Assets.xcassets in Resources */,
-				419F79921C8EEC640035ABBD /* Main.storyboard in Resources */,
+				410EFF651C8EF2490086351E /* login.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +402,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419F798F1C8EEC640035ABBD /* ViewController.m in Sources */,
 				419F798C1C8EEC640035ABBD /* AppDelegate.m in Sources */,
+				41F1B0DE1C8F060E00462D32 /* BaseViewController.m in Sources */,
+				410EFF611C8EF1290086351E /* UIView+PlaceSize.m in Sources */,
 				419F79891C8EEC640035ABBD /* main.m in Sources */,
+				410EFF711C8EFBD60086351E /* MainViewController.m in Sources */,
+				410EFF601C8EF1290086351E /* LoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +443,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		419F79901C8EEC640035ABBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				419F79911C8EEC640035ABBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		419F79951C8EEC640035ABBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,6 +480,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Daily-Life/DailyLife-prefix.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -397,6 +523,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Daily-Life/DailyLife-prefix.h";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -414,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Daily-Life/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.vinfol.Daily-Life";
@@ -425,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Daily-Life/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.vinfol.Daily-Life";
@@ -499,6 +629,7 @@
 				419F79B31C8EEC640035ABBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419F79B41C8EEC640035ABBD /* Build configuration list for PBXNativeTarget "Daily-LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +638,7 @@
 				419F79B61C8EEC640035ABBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419F79B71C8EEC640035ABBD /* Build configuration list for PBXNativeTarget "Daily-LifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +647,7 @@
 				419F79B91C8EEC640035ABBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
