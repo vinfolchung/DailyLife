@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "CitySideViewController.h"
+#import "CitySearchViewController.h"
 #import "BaseNavigationViewController.h"
 #define meBtnBackgroundColor [UIColor colorWithRed:232/255.0 green:240/255.0 blue:195/255.0 alpha:0.2]
 
@@ -15,10 +15,10 @@
 
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) UIButton *cityBtn;
-@property (nonatomic, copy) NSString *cityName;
 @property (nonatomic, strong) UIButton *meBtn;
 @property (nonatomic, strong) BaseNavigationViewController *citySideNVC;
-@property (nonatomic, strong) CitySideViewController *citySideVC;
+@property (nonatomic, strong) CitySearchViewController *citySideVC;
+
 @end
 
 @implementation MainViewController
@@ -28,7 +28,6 @@
     [super viewDidLoad];
 }
 
-
 #pragma mark - override methods
 - (NSString *)setNavigationItemTitle
 {
@@ -37,13 +36,13 @@
 
 - (UIBarButtonItem *)setLeftBarButtonItem
 {
-    UIBarButtonItem *leftBarBtn = [[UIBarButtonItem alloc] initWithCustomView:self.cityBtn];
+    UIBarButtonItem *leftBarBtn = [[UIBarButtonItem alloc] initWithCustomView:self.meBtn];
     return leftBarBtn;
 }
 
 - (UIBarButtonItem *)setRightBarButtonItem
 {
-    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithCustomView:self.meBtn];
+    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithCustomView:self.cityBtn];
     return rightBarBtn;
 }
 
@@ -67,11 +66,15 @@
 {
     if (!_cityBtn) {
         _cityBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _cityBtn.frame = CGRectMake(0, 30*kAdaptPixel, 50*kAdaptPixel, 30*kAdaptPixel);
-        [_cityBtn setTitle:@"广州" forState:UIControlStateNormal];
+        _cityBtn.frame = CGRectMake(0, 0, 60*kAdaptPixel, 30*kAdaptPixel);
+        
+        //设置城市名，通过userdefaults如果没有城市名则默认为佛山，若有则选择
+        if ([UserDefaultsUtil getSelectedCityName]) {
+            [_cityBtn setTitle:@"佛山" forState:UIControlStateNormal];
+        }
         [_cityBtn setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
-        _cityBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _cityBtn.titleLabel.font = [UIFont boldSystemFontOfSize:16.0*kAdaptPixel];
+        _cityBtn.titleLabel.textAlignment = NSTextAlignmentLeft;
+        [_cityBtn setImage:[UIImage imageNamed:@"btn_changeCity"] forState:UIControlStateNormal];
         [_cityBtn addTarget:self action:@selector(onCityBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _cityBtn;
@@ -81,22 +84,22 @@
 {
     if (!_meBtn) {
         _meBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _meBtn.frame = CGRectMake(kScreen_Width - 35*kAdaptPixel, 30*kAdaptPixel, 30*kAdaptPixel, 30*kAdaptPixel);
+        _meBtn.frame = CGRectMake(0, 0, 30*kAdaptPixel, 30*kAdaptPixel);
         [_meBtn setImage:[UIImage imageNamed:@"nav_me"] forState:UIControlStateNormal];
         [_meBtn addTarget:self action:@selector(onMeBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _meBtn;
 }
 
-- (CitySideViewController *)citySideVC
+- (CitySearchViewController *)citySideVC
 {
     if (!_citySideVC) {
-        _citySideVC = [[CitySideViewController alloc] init];
+        _citySideVC = [[CitySearchViewController alloc] init];
     }
     return _citySideVC;
 }
 
-- (BaseNavigationViewController *)CitySideNVC
+- (BaseNavigationViewController *)citySideNVC
 {
     if (!_citySideNVC) {
         _citySideNVC = [[BaseNavigationViewController alloc] initWithRootViewController:self.citySideVC];

@@ -17,11 +17,17 @@
 		41A6BFC41C901E6700A05EBD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFB21C901E6700A05EBD /* MainViewController.m */; };
 		41A6BFC51C901E6700A05EBD /* bigShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFB81C901E6700A05EBD /* bigShadow.png */; };
 		41A6BFC81C901E6700A05EBD /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFBB1C901E6700A05EBD /* nav_back@2x.png */; };
-		41A6BFC91C901E6700A05EBD /* nav_bar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFBC1C901E6700A05EBD /* nav_bar@3x.png */; };
 		41A6BFCA1C901E6700A05EBD /* UIView+PlaceSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFC01C901E6700A05EBD /* UIView+PlaceSize.m */; };
 		41A6BFCC1C9051B500A05EBD /* nav_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFCB1C9051B500A05EBD /* nav_me.png */; };
-		41A6BFD31C905B1300A05EBD /* CitySideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFD21C905B1300A05EBD /* CitySideViewController.m */; };
+		41A6BFD31C905B1300A05EBD /* CitySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFD21C905B1300A05EBD /* CitySearchViewController.m */; };
 		41A6BFD61C9063A000A05EBD /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFD51C9063A000A05EBD /* BaseNavigationViewController.m */; };
+		41A6BFD81C91029500A05EBD /* btn_changeCity.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFD71C91029500A05EBD /* btn_changeCity.png */; };
+		41A6BFDA1C910FAA00A05EBD /* btn_nav_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFD91C910FAA00A05EBD /* btn_nav_close.png */; };
+		41A6BFDD1C9111C700A05EBD /* CitySearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFDC1C9111C700A05EBD /* CitySearchResultController.m */; };
+		41A6BFE61C918CB900A05EBD /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFE41C918CB900A05EBD /* cities.plist */; };
+		41A6BFE71C918CB900A05EBD /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A6BFE51C918CB900A05EBD /* cityGroups.plist */; };
+		41A6BFEA1C9196D800A05EBD /* CityGroupsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFE91C9196D800A05EBD /* CityGroupsModel.m */; };
+		41A6BFEE1C91A4DA00A05EBD /* UserDefaultsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6BFED1C91A4DA00A05EBD /* UserDefaultsUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,14 +68,23 @@
 		41A6BFB21C901E6700A05EBD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		41A6BFB81C901E6700A05EBD /* bigShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigShadow.png; sourceTree = "<group>"; };
 		41A6BFBB1C901E6700A05EBD /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
-		41A6BFBC1C901E6700A05EBD /* nav_bar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar@3x.png"; sourceTree = "<group>"; };
 		41A6BFBF1C901E6700A05EBD /* UIView+PlaceSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PlaceSize.h"; sourceTree = "<group>"; };
 		41A6BFC01C901E6700A05EBD /* UIView+PlaceSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PlaceSize.m"; sourceTree = "<group>"; };
 		41A6BFCB1C9051B500A05EBD /* nav_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_me.png; sourceTree = "<group>"; };
-		41A6BFD11C905B1300A05EBD /* CitySideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySideViewController.h; sourceTree = "<group>"; };
-		41A6BFD21C905B1300A05EBD /* CitySideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySideViewController.m; sourceTree = "<group>"; };
+		41A6BFD11C905B1300A05EBD /* CitySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchViewController.h; sourceTree = "<group>"; };
+		41A6BFD21C905B1300A05EBD /* CitySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchViewController.m; sourceTree = "<group>"; };
 		41A6BFD41C9063A000A05EBD /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		41A6BFD51C9063A000A05EBD /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		41A6BFD71C91029500A05EBD /* btn_changeCity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_changeCity.png; sourceTree = "<group>"; };
+		41A6BFD91C910FAA00A05EBD /* btn_nav_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_nav_close.png; sourceTree = "<group>"; };
+		41A6BFDB1C9111C700A05EBD /* CitySearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearchResultController.h; sourceTree = "<group>"; };
+		41A6BFDC1C9111C700A05EBD /* CitySearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearchResultController.m; sourceTree = "<group>"; };
+		41A6BFE41C918CB900A05EBD /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		41A6BFE51C918CB900A05EBD /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		41A6BFE81C9196D800A05EBD /* CityGroupsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityGroupsModel.h; sourceTree = "<group>"; };
+		41A6BFE91C9196D800A05EBD /* CityGroupsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityGroupsModel.m; sourceTree = "<group>"; };
+		41A6BFEC1C91A4DA00A05EBD /* UserDefaultsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsUtil.h; sourceTree = "<group>"; };
+		41A6BFED1C91A4DA00A05EBD /* UserDefaultsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +141,7 @@
 				41A6BFB51C901E6700A05EBD /* Resource */,
 				41A6BFBD1C901E6700A05EBD /* Util */,
 				41A6BFC11C901E6700A05EBD /* Views */,
+				41A6BFE31C918CB900A05EBD /* Plists */,
 				41A6BF7A1C90125400A05EBD /* AppDelegate.h */,
 				41A6BF7B1C90125400A05EBD /* AppDelegate.m */,
 				41A6BF831C90125500A05EBD /* Assets.xcassets */,
@@ -211,6 +227,7 @@
 		41A6BFB41C901E6700A05EBD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				41A6BFDF1C91748600A05EBD /* City */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,8 +253,9 @@
 			children = (
 				41A6BFB81C901E6700A05EBD /* bigShadow.png */,
 				41A6BFBB1C901E6700A05EBD /* nav_back@2x.png */,
-				41A6BFBC1C901E6700A05EBD /* nav_bar@3x.png */,
 				41A6BFCB1C9051B500A05EBD /* nav_me.png */,
+				41A6BFD71C91029500A05EBD /* btn_changeCity.png */,
+				41A6BFD91C910FAA00A05EBD /* btn_nav_close.png */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 		41A6BFBD1C901E6700A05EBD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				41A6BFEB1C91A46000A05EBD /* UserDefaultsUtil */,
 				41A6BFBE1C901E6700A05EBD /* Category */,
 			);
 			path = Util;
@@ -262,6 +281,7 @@
 		41A6BFC11C901E6700A05EBD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41A6BFDE1C9118CD00A05EBD /* City */,
 				41A6BFC21C901E6700A05EBD /* Main */,
 			);
 			path = Views;
@@ -277,10 +297,46 @@
 		41A6BFCD1C90575E00A05EBD /* City */ = {
 			isa = PBXGroup;
 			children = (
-				41A6BFD11C905B1300A05EBD /* CitySideViewController.h */,
-				41A6BFD21C905B1300A05EBD /* CitySideViewController.m */,
+				41A6BFD11C905B1300A05EBD /* CitySearchViewController.h */,
+				41A6BFD21C905B1300A05EBD /* CitySearchViewController.m */,
+				41A6BFDB1C9111C700A05EBD /* CitySearchResultController.h */,
+				41A6BFDC1C9111C700A05EBD /* CitySearchResultController.m */,
 			);
 			path = City;
+			sourceTree = "<group>";
+		};
+		41A6BFDE1C9118CD00A05EBD /* City */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		41A6BFDF1C91748600A05EBD /* City */ = {
+			isa = PBXGroup;
+			children = (
+				41A6BFE81C9196D800A05EBD /* CityGroupsModel.h */,
+				41A6BFE91C9196D800A05EBD /* CityGroupsModel.m */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		41A6BFE31C918CB900A05EBD /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				41A6BFE41C918CB900A05EBD /* cities.plist */,
+				41A6BFE51C918CB900A05EBD /* cityGroups.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		41A6BFEB1C91A46000A05EBD /* UserDefaultsUtil */ = {
+			isa = PBXGroup;
+			children = (
+				41A6BFEC1C91A4DA00A05EBD /* UserDefaultsUtil.h */,
+				41A6BFED1C91A4DA00A05EBD /* UserDefaultsUtil.m */,
+			);
+			path = UserDefaultsUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,11 +445,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A6BFE61C918CB900A05EBD /* cities.plist in Resources */,
 				41A6BFC51C901E6700A05EBD /* bigShadow.png in Resources */,
 				41A6BF871C90125500A05EBD /* LaunchScreen.storyboard in Resources */,
 				41A6BF841C90125500A05EBD /* Assets.xcassets in Resources */,
+				41A6BFDA1C910FAA00A05EBD /* btn_nav_close.png in Resources */,
+				41A6BFE71C918CB900A05EBD /* cityGroups.plist in Resources */,
+				41A6BFD81C91029500A05EBD /* btn_changeCity.png in Resources */,
 				41A6BFC81C901E6700A05EBD /* nav_back@2x.png in Resources */,
-				41A6BFC91C901E6700A05EBD /* nav_bar@3x.png in Resources */,
 				41A6BFCC1C9051B500A05EBD /* nav_me.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +479,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A6BF7C1C90125400A05EBD /* AppDelegate.m in Sources */,
+				41A6BFDD1C9111C700A05EBD /* CitySearchResultController.m in Sources */,
 				41A6BFC31C901E6700A05EBD /* BaseViewController.m in Sources */,
 				41A6BFD61C9063A000A05EBD /* BaseNavigationViewController.m in Sources */,
 				41A6BF791C90125400A05EBD /* main.m in Sources */,
+				41A6BFEA1C9196D800A05EBD /* CityGroupsModel.m in Sources */,
+				41A6BFEE1C91A4DA00A05EBD /* UserDefaultsUtil.m in Sources */,
 				41A6BFC41C901E6700A05EBD /* MainViewController.m in Sources */,
-				41A6BFD31C905B1300A05EBD /* CitySideViewController.m in Sources */,
+				41A6BFD31C905B1300A05EBD /* CitySearchViewController.m in Sources */,
 				41A6BFCA1C901E6700A05EBD /* UIView+PlaceSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

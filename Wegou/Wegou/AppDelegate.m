@@ -16,14 +16,24 @@
 @implementation AppDelegate
 
 
+//- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    CGRect bounds = [[UIScreen mainScreen] bounds];
+//    [self.window setFrame:bounds];
+//    [self.window setBounds:bounds];
+//    return YES;
+//}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] init];
-    self.window.frame = [[UIScreen alloc] bounds];
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    self.window.frame = CGRectMake(0, 0, frame.size.width+0.0000001, frame.size.height+0.0000001);
     MainViewController *mainVC = [[MainViewController alloc] init];
     self.window.rootViewController = mainVC;
     [self.window makeKeyAndVisible];
+    //self.window.frame = [[UIScreen alloc] bounds];
     
     return YES;
 }

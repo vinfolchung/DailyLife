@@ -9,6 +9,7 @@
 #ifndef Wegou_prefix_h
 #define Wegou_prefix_h
 #import "UIView+PlaceSize.h"
+#import "UserDefaultsUtil.h"
 
 //屏幕适配,以iPhone6为基准
 #define kAdaptPixel (kScreen_Width / 375.0f)
