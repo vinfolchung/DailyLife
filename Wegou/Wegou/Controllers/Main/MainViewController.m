@@ -11,7 +11,7 @@
 #import "BaseNavigationViewController.h"
 #define meBtnBackgroundColor [UIColor colorWithRed:232/255.0 green:240/255.0 blue:195/255.0 alpha:0.2]
 
-@interface MainViewController()
+@interface MainViewController()<CitySearchVCDelegate>
 
 @property (nonatomic, strong) UIView *backgroundView;
 @property (nonatomic, strong) UIButton *cityBtn;
@@ -26,6 +26,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+#pragma mark - CitySearchVCDelegate
+- (void)selectedCityName
+{
+    [self.cityBtn setTitle:[UserDefaultsUtil getSelectedCityName] forState:UIControlStateNormal];
+    [self.cityBtn reloadInputViews];
 }
 
 #pragma mark - override methods
@@ -67,10 +74,10 @@
     if (!_cityBtn) {
         _cityBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _cityBtn.frame = CGRectMake(0, 0, 60*kAdaptPixel, 30*kAdaptPixel);
-        
-        //设置城市名，通过userdefaults如果没有城市名则默认为佛山，若有则选择
-        if ([UserDefaultsUtil getSelectedCityName]) {
-            [_cityBtn setTitle:@"佛山" forState:UIControlStateNormal];
+        if ([UserDefaultsUtil getSelectedCityName] == nil) {
+            [self.cityBtn setTitle:@"佛山" forState:UIControlStateNormal];
+        }else {
+            [self.cityBtn setTitle:[UserDefaultsUtil getSelectedCityName] forState:UIControlStateNormal];
         }
         [_cityBtn setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
         _cityBtn.titleLabel.textAlignment = NSTextAlignmentLeft;
@@ -95,6 +102,7 @@
 {
     if (!_citySideVC) {
         _citySideVC = [[CitySearchViewController alloc] init];
+        _citySideVC.delegate = self;
     }
     return _citySideVC;
 }

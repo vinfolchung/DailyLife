@@ -10,7 +10,6 @@
 #define Default_SelectedCityName @"default_selectedCityName"
 
 @implementation UserDefaultsUtil
-
 /**
  * 获取和保存选择的城市名
  */

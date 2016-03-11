@@ -12,10 +12,12 @@
 
 @interface CitySearchViewController : BaseViewController
 
+@property (nonatomic, weak) id<CitySearchVCDelegate> delegate;
+
 @end
 
 @protocol CitySearchVCDelegate <NSObject>
 @optional
-
+- (void)selectedCityName;
 
 @end

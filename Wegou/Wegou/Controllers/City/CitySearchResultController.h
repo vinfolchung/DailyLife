@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CitySearchResultControllerDelegate;
+
 @interface CitySearchResultController : UIViewController
+
+@property (nonatomic, copy) NSString *searchText;
+@property (nonatomic, weak) id<CitySearchResultControllerDelegate> delegate;
+
+@end
+
+@protocol CitySearchResultControllerDelegate <NSObject>
+@optional
+- (void)didSelectedCell;
 
 @end
