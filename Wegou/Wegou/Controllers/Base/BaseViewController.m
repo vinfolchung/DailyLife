@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-#define NormalBackgroundColor [UIColor colorWithRed:26/255.0 green:31/255.0 blue:45/255.0 alpha:1.0f]
 
 @interface BaseViewController()
 
@@ -43,14 +42,14 @@
         CGRect screenRect = [[UIScreen mainScreen] bounds];
         UINavigationBar *navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenRect.size.width, (44+20)*kAdaptPixel)];
         navigationBar.translucent = NO;
-        [navigationBar setBarTintColor:NormalBackgroundColor];
+        [navigationBar setBarTintColor:NavBackgroundColor];
         [navigationBar pushNavigationItem:navigationItem animated:YES];
         navigationItem.titleView = label;
         navigationBar.layer.masksToBounds = YES;
         [self.view addSubview:navigationBar];
     }else {
         self.navigationController.navigationBar.translucent = NO;
-        [self.navigationController.navigationBar setBarTintColor:NormalBackgroundColor];
+        [self.navigationController.navigationBar setBarTintColor:NavBackgroundColor];
         self.navigationItem.titleView = label;
     }
     

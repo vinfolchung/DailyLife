@@ -60,6 +60,9 @@
 - (void)didSelectedCell
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.citySearchBar resignFirstResponder];
+    [self.citySearchResultController.view removeFromSuperview];
+    self.citySearchBar.text = @"";
 }
 
 
@@ -75,7 +78,7 @@
 {
     [self.coverView setHidden:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.navigationController.navigationBar setHeight:64*kAdaptPixel];
+    [self.navigationController.navigationBar setHeight:64];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
@@ -83,10 +86,16 @@
 {
     if(searchText.length) {
         self.citySearchResultController.searchText = searchText;
+        [self.view addSubview:self.citySearchResultController.view];
         [self.citySearchResultController.view setHidden:NO];
     }else {
         [self.citySearchResultController.view setHidden:YES];
     }
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [self.citySearchBar resignFirstResponder];
 }
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
@@ -144,7 +153,7 @@
 - (UITableView *)cityNameTableView
 {
     if (!_cityNameTableView) {
-        _cityNameTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 33*kAdaptPixel, kScreen_Width, kScreen_Height-33*kAdaptPixel)];
+        _cityNameTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 31*kAdaptPixel, kScreen_Width, kScreen_Height-33*kAdaptPixel)];
         [_cityNameTableView setBackgroundColor:[UIColor whiteColor]];
         _cityNameTableView.delegate = self;
         _cityNameTableView.dataSource = self;
@@ -156,7 +165,7 @@
 - (UISearchBar *)citySearchBar
 {
     if (!_citySearchBar) {
-        _citySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 2*kAdaptPixel, kScreen_Width, 30*kAdaptPixel)];
+        _citySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, 30*kAdaptPixel)];
         _citySearchBar.placeholder = @"请输入要搜索的城市名";
         _citySearchBar.delegate = self;
     }
@@ -182,7 +191,7 @@
 - (UIView *)coverView
 {
     if (!_coverView) {
-        _coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 33*kAdaptPixel, kScreen_Width, kScreen_Height)];
+        _coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 31*kAdaptPixel, kScreen_Width, kScreen_Height)];
         [_coverView setBackgroundColor:[UIColor blackColor]];
         _coverView.hidden = YES;
         _coverView.alpha = 0.5;
@@ -194,11 +203,10 @@
 {
     if (!_citySearchResultController) {
         _citySearchResultController = [[CitySearchResultController alloc] init];
-//        [_citySearchResultController.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.equalTo(self.citySearchBar.mas_bottom).with.offset(1);
-//        }];
+        _citySearchResultController.delegate = self;
     }
     return _citySearchResultController;
 }
+
 
 @end

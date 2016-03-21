@@ -18,5 +18,6 @@
 #define kScreen_Height [UIScreen mainScreen].bounds.size.height
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 
-
+//导航条颜色
+#define NavBackgroundColor [UIColor colorWithRed:26/255.0 green:31/255.0 blue:45/255.0 alpha:1.0f]
 #endif /* Wegou_prefix_h */
