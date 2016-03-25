@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4101BB511C9ADA07003B1FFB /* titleArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4101BB501C9ADA07003B1FFB /* titleArray.plist */; };
 		4101BB551C9ADAB4003B1FFB /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4101BB541C9ADAB4003B1FFB /* NewsModel.m */; };
+		412DBC3D1CA0DB5B000FBF01 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 412DBC3C1CA0DB5B000FBF01 /* HTTPManager.m */; };
+		412DBC411CA142E7000FBF01 /* NewsArticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 412DBC401CA142E7000FBF01 /* NewsArticleManager.m */; };
+		412DBC441CA18765000FBF01 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 412DBC431CA18765000FBF01 /* NewsTableViewCell.m */; };
+		413689EE1CA280CC00D5E1F2 /* NetWorkStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 413689ED1CA280CC00D5E1F2 /* NetWorkStateManager.m */; };
 		417EE7431C9BED70001ABADB /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EE7421C9BED70001ABADB /* TitleView.m */; };
 		417EE7461C9BED80001ABADB /* TitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EE7451C9BED80001ABADB /* TitleLabel.m */; };
 		417EE74D1C9BF6EC001ABADB /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EE74C1C9BF6EC001ABADB /* NewsTableViewController.m */; };
@@ -70,6 +74,15 @@
 		4101BB501C9ADA07003B1FFB /* titleArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = titleArray.plist; sourceTree = "<group>"; };
 		4101BB531C9ADAB4003B1FFB /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		4101BB541C9ADAB4003B1FFB /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		412DBC3B1CA0DB5B000FBF01 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		412DBC3C1CA0DB5B000FBF01 /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		412DBC3E1CA0DB97000FBF01 /* SingletonTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonTemplate.h; sourceTree = "<group>"; };
+		412DBC3F1CA142E7000FBF01 /* NewsArticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsArticleManager.h; sourceTree = "<group>"; };
+		412DBC401CA142E7000FBF01 /* NewsArticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsArticleManager.m; sourceTree = "<group>"; };
+		412DBC421CA18764000FBF01 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		412DBC431CA18765000FBF01 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		413689EC1CA280CC00D5E1F2 /* NetWorkStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkStateManager.h; sourceTree = "<group>"; };
+		413689ED1CA280CC00D5E1F2 /* NetWorkStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkStateManager.m; sourceTree = "<group>"; };
 		417EE7411C9BED70001ABADB /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
 		417EE7421C9BED70001ABADB /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
 		417EE7441C9BED80001ABADB /* TitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleLabel.h; sourceTree = "<group>"; };
@@ -189,6 +202,20 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		412DBC3A1CA0DB3C000FBF01 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				412DBC3B1CA0DB5B000FBF01 /* HTTPManager.h */,
+				412DBC3C1CA0DB5B000FBF01 /* HTTPManager.m */,
+				413689EC1CA280CC00D5E1F2 /* NetWorkStateManager.h */,
+				413689ED1CA280CC00D5E1F2 /* NetWorkStateManager.m */,
+				412DBC3F1CA142E7000FBF01 /* NewsArticleManager.h */,
+				412DBC401CA142E7000FBF01 /* NewsArticleManager.m */,
+			);
+			name = Managers;
+			path = Libs/Managers;
+			sourceTree = "<group>";
+		};
 		417EE74A1C9BF673001ABADB /* NewsTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +263,7 @@
 				41A6BFC11C901E6700A05EBD /* Views */,
 				41A6BFAB1C901E6700A05EBD /* Controllers */,
 				41A6BFB31C901E6700A05EBD /* Libs */,
+				412DBC3A1CA0DB3C000FBF01 /* Managers */,
 				41A6BFB51C901E6700A05EBD /* Resource */,
 				41A6BFBD1C901E6700A05EBD /* Util */,
 				41A6BFE31C918CB900A05EBD /* Plists */,
@@ -357,6 +385,7 @@
 			children = (
 				41A6BFEB1C91A46000A05EBD /* UserDefaultsUtil */,
 				41A6BFBE1C901E6700A05EBD /* Category */,
+				412DBC3E1CA0DB97000FBF01 /* SingletonTemplate.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -449,6 +478,8 @@
 			children = (
 				41FC27C91C9EA3D10075D8E8 /* ContentCollectionViewCell.h */,
 				41FC27CA1C9EA3D10075D8E8 /* ContentCollectionViewCell.m */,
+				412DBC421CA18764000FBF01 /* NewsTableViewCell.h */,
+				412DBC431CA18765000FBF01 /* NewsTableViewCell.m */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";
@@ -666,7 +697,9 @@
 				41A6BFDD1C9111C700A05EBD /* CitySearchResultController.m in Sources */,
 				41FC27CE1C9EB48E0075D8E8 /* UICollectionViewFlowLayout+FullItem.m in Sources */,
 				41A6BFF41C91D3FD00A05EBD /* CitiesModel.m in Sources */,
+				412DBC441CA18765000FBF01 /* NewsTableViewCell.m in Sources */,
 				4101BB551C9ADAB4003B1FFB /* NewsModel.m in Sources */,
+				412DBC3D1CA0DB5B000FBF01 /* HTTPManager.m in Sources */,
 				418F4AAA1C9994BD00F4185B /* MineMainController.m in Sources */,
 				41A6BFC31C901E6700A05EBD /* BaseViewController.m in Sources */,
 				41FC27C71C9E68B20075D8E8 /* UIColor+Add.m in Sources */,
@@ -679,9 +712,11 @@
 				41DCD5BC1C9D90CD000F50D7 /* CategoryViewCellModel.m in Sources */,
 				41DCD5C21C9D937F000F50D7 /* CategoryViewLayout.m in Sources */,
 				41A6BF791C90125400A05EBD /* main.m in Sources */,
+				412DBC411CA142E7000FBF01 /* NewsArticleManager.m in Sources */,
 				41DCD5B31C9D81C1000F50D7 /* MainCategoryView.m in Sources */,
 				41DCD5BF1C9D9359000F50D7 /* CategoryViewCell.m in Sources */,
 				41A6BFEA1C9196D800A05EBD /* CityGroupsModel.m in Sources */,
+				413689EE1CA280CC00D5E1F2 /* NetWorkStateManager.m in Sources */,
 				41A6BFEE1C91A4DA00A05EBD /* UserDefaultsUtil.m in Sources */,
 				41A6BFC41C901E6700A05EBD /* MainViewController.m in Sources */,
 				41A6BFD31C905B1300A05EBD /* CitySearchViewController.m in Sources */,
